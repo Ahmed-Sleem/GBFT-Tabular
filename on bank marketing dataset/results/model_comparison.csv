@@ -1,0 +1,7 @@
+Model,Parameters,Size (MB),Inference (ms),Throughput (samples/s),Peak Memory (MB)
+Enhanced GBFT,172898,0.66,2.191,116868,19.580078125
+FT-Transformer,18978,0.07,1.218,210140,31.037109375
+TabNet,23678,0.09,2.072,123563,19.4921875
+LightGBM,N/A (Tree-based),0.66,2.907,88058,N/A
+XGBoost,N/A (Tree-based),0.70,1.061,241200,N/A
+CatBoost,N/A (Tree-based),0.22,1.026,249401,N/A
