@@ -8,7 +8,7 @@
 > Ahmed Sleem, Nihal Ahmed Adly, Gamila S. Elfayoumi, Ahmed B. Zaky  
 > Egypt-Japan University of Science and Technology (E-JUST)
 
-**[📊 Results](#main-results)** | **[💻 Notebooks](#code-notebooks)** | **[📈 Visualizations](#visualizations)**
+**[📊 Results](#-main-results)** | **[💻 Notebooks](#-code-notebooks)** | **[📈 Visualizations](#-visualizations)**
 
 ---
 
@@ -31,6 +31,8 @@ We introduce GBFT, a framework combining tree-based learning with neural network
 
 ### BERT-GBFT: Semantic Understanding (Bank Marketing Dataset)
 
+<div align="center">
+
 | Model | AUC | F1 | Precision | Recall | MCC |
 |-------|-----|-----|-----------|--------|-----|
 | **BERT-GBFT** | 0.929 | **0.622** | 0.578 | **0.671** | **0.568** |
@@ -38,6 +40,8 @@ We introduce GBFT, a framework combining tree-based learning with neural network
 | LightGBM | 0.931 | 0.537 | 0.648 | 0.458 | 0.496 |
 | Enhanced GBFT | 0.928 | 0.633 | 0.577 | 0.700 | 0.582 |
 | FT-Transformer | 0.915 | 0.542 | 0.626 | 0.478 | 0.496 |
+
+</div>
 
 **Key Finding**: **15.2% F1 improvement** over XGBoost (0.622 vs 0.541) while enabling natural language explanations like *"Why was customer X classified as high-risk?"*
 
@@ -50,11 +54,15 @@ We introduce GBFT, a framework combining tree-based learning with neural network
 
 ### Ablation Study: BERT Semantic Contribution Validation
 
+<div align="center">
+
 | Variant | F1 | AUC | Recall | Parameters |
 |---------|-----|-----|--------|------------|
 | **BERT-GBFT (Full)** | **0.621** | 0.927 | **0.671** | 271K |
 | Without BERT Stream | 0.579 | 0.926 | 0.549 | 155K |
 | **Improvement** | **+7.19%** | +0.1% | **+22.2%** | +75% |
+
+</div>
 
 **Conclusion**: BERT semantic embeddings provide **statistically significant performance gains** beyond architectural complexity, validating the semantic understanding hypothesis.
 
@@ -64,6 +72,8 @@ We introduce GBFT, a framework combining tree-based learning with neural network
 
 #### Adult Income Dataset (32,561 samples, 76:24 imbalance)
 
+<div align="center">
+
 | Model | AUC | F1 | Precision | Recall | MCC |
 |-------|-----|-----|-----------|--------|-----|
 | **Enhanced GBFT** | 0.921 | **0.711** | 0.753 | **0.672** | 0.623 |
@@ -71,6 +81,8 @@ We introduce GBFT, a framework combining tree-based learning with neural network
 | LightGBM | 0.922 | 0.705 | 0.778 | 0.645 | 0.624 |
 | CatBoost | 0.920 | 0.687 | 0.778 | 0.615 | 0.605 |
 | FT-Transformer | 0.906 | 0.654 | 0.754 | 0.577 | 0.567 |
+
+</div>
 
 <p align="center">
   <img src="on adult dataset/results/model_comparison.png" width="70%"/>
@@ -81,6 +93,8 @@ We introduce GBFT, a framework combining tree-based learning with neural network
 
 #### Bank Marketing Dataset (45,211 samples, 88:12 severe imbalance)
 
+<div align="center">
+
 | Model | AUC | F1 | Precision | Recall | MCC |
 |-------|-----|-----|-----------|--------|-----|
 | **Enhanced GBFT** | 0.928 | **0.633** | 0.577 | **0.700** | **0.582** |
@@ -88,6 +102,8 @@ We introduce GBFT, a framework combining tree-based learning with neural network
 | LightGBM | 0.931 | 0.537 | 0.648 | 0.458 | 0.496 |
 | CatBoost | 0.929 | 0.520 | 0.661 | 0.429 | 0.485 |
 | FT-Transformer | 0.915 | 0.542 | 0.626 | 0.478 | 0.496 |
+
+</div>
 
 **Key Finding**: **17% F1 improvement** over XGBoost (0.633 vs 0.541) with **53% recall improvement** (0.700 vs 0.459) on severely imbalanced data.
 
